@@ -1,0 +1,173 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+h1 {
+  color: orange;
+}
+
+.wrapper {
+  height: 150vh;
+  background: rgb(51, 51, 51);
+  background: linear-gradient(
+    0deg,
+    rgba(51, 51, 51, 1) 60%,
+    rgba(255, 165, 0, 1) 40%
+  );
+}
+
+.container {
+  width: 80%;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* Navigation Styling */
+.nav-bar {
+  margin-top: 20px;
+  position: absolute;
+  box-sizing: border-box;
+  padding-top: 10px;
+  height: 40px;
+  background-color: black;
+  /* color: white; */
+  width: 100%;
+}
+
+.nav-bar ul {
+  margin-left: 5%;
+  list-style-type: none;
+}
+
+.nav-bar ul li {
+  display: inline;
+  margin-right: 7%;
+}
+
+.nav-bar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.active {
+  color: green;
+}
+
+.text-center {
+  text-align: center;
+}
+
+header {
+  position: relative;
+  top: 70px;
+  padding-bottom: 20px;
+  background-color: white;
+}
+.middle-container {
+  position: relative;
+  background-color: white;
+  padding-bottom: 30px;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+}
+
+.col-md-4 {
+  float: left;
+  width: 33%;
+}
+
+.text-left {
+  text-align: left;
+}
+.clear-fix {
+  clear: both;
+  content: "";
+}
+
+.card-button {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 9px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.bottom-container {
+  background-color: white;
+  padding: 3%;
+}
+
+section {
+  width: 60%;
+  float: left;
+  text-align: justify;
+}
+aside {
+  width: 35%;
+  float: right;
+}
+
+.text-orange {
+  color: orange;
+}
+
+.text-white {
+  color: white;
+}
+
+.bg-orange {
+  background-color: orange;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+.social-icons li {
+  list-style-type: none;
+  display: inline;
+  margin-right: 11%;
+}
+
+.footer {
+  background-color: black;
+}
+
+img.small-banner {
+  display: none;
+}
+@media screen and (max-width: 700px) {
+  .nav-bar ul li {
+    font-size: 12px;
+    margin-right: 10px;
+  }
+  img.large-banner {
+    display: none !important;
+  }
+
+  img.small-banner {
+    display: block !important;
+    margin: 0 auto;
+  }
+
+  .middle-container .row .col-md-4 {
+    width: 100%;
+  }
+
+  .bottom-container section {
+    width: 100%;
+  }
+
+  .bottom-container section img {
+    width: 100%;
+  }
+
+  .bottom-container aside {
+    width: 100%;
+  }
+}
